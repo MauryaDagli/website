@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Leveling: From Weakest Hunter to Shadow Monarch - Official Companion</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Mobile Navigation Toggle -->
+    <button class="mobile-nav-toggle" id="mobile-nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Navigation Header -->
+    <nav class="main-nav" id="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>Solo Leveling</h1>
+                <span class="nav-subtitle">Complete Journey</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" data-section="home">Home</a></li>
+                <li><a href="#story" data-section="story">Interactive Story</a></li>
+                <li><a href="#characters" data-section="characters">Characters</a></li>
+                <li><a href="#timeline" data-section="timeline">Timeline</a></li>
+                <li><a href="#gallery" data-section="gallery">Gallery</a></li>
+                <li><a href="#shop" data-section="shop">Shop</a></li>
+                <li><a href="#community" data-section="community">Community</a></li>
+                <li class="nav-divider"></li>
+                <li><a href="#login" data-section="login">Login</a></li>
+                <li><a href="#register" data-section="register">Register</a></li>
+            </ul>
+            <div class="nav-controls">
+                <div class="cart-icon" data-section="shop">
+                    <span class="cart-count" id="cart-count">0</span>
+                    🛒
+                </div>
+                <button id="theme-toggle" class="btn btn--secondary">🌙</button>
+                <button id="audio-toggle" class="btn btn--secondary">🔊</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Homepage -->
+    <section id="home" class="hero-section active-section">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+            <div class="hero-aura"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-main">
+                <div class="hero-title-container">
+                    <h1 class="hero-title">Solo Leveling</h1>
+                    <h2 class="hero-subtitle">From Weakest Hunter to Shadow Monarch</h2>
+                    <p class="hero-description">
+                        Experience Sung Jinwoo's complete transformation through authentic manhwa artwork, 
+                        interactive story choices, and immersive character development.
+                    </p>
+                    <div class="hero-cta-buttons">
+                        <button class="btn btn--primary" data-target="story">Start Your Journey</button>
+                        <button class="btn btn--outline" data-target="shop">Browse Merchandise</button>
+                    </div>
+                </div>
+                
+                <div class="hero-image-container">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755449629/pplx_project_search_images/c8fcdcaa1f6c68c1e9053db84046fef8721fcb40.png" alt="Jinwoo Transformation" class="hero-image">
+                    <div class="transformation-overlay"></div>
+                </div>
+            </div>
+            
+            <div class="hero-features">
+                <div class="feature-grid">
+                    <div class="feature-card" data-target="story">
+                        <div class="feature-icon">📖</div>
+                        <h3>Interactive Story</h3>
+                        <p>Experience every arc with meaningful choices that shape Jinwoo's journey</p>
+                    </div>
+                    
+                    <div class="feature-card" data-target="characters">
+                        <div class="feature-icon">⚔️</div>
+                        <h3>Shadow Army Database</h3>
+                        <p>Meet Igris, Beru, and all legendary shadow soldiers with detailed profiles</p>
+                    </div>
+                    
+                    <div class="feature-card" data-target="timeline">
+                        <div class="feature-icon">📊</div>
+                        <h3>Power Evolution</h3>
+                        <p>Track transformation from E-rank to Shadow Monarch with visual progression</p>
+                    </div>
+                    
+                    <div class="feature-card" data-target="shop">
+                        <div class="feature-icon">🛍️</div>
+                        <h3>Official Merchandise</h3>
+                        <p>Exclusive Solo Leveling collectibles, figures, and apparel</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">270+</span>
+                    <span class="stat-label">Manhwa Chapters</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Major Story Arcs</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">Shadow Soldiers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Power Level</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Story Page -->
+    <section id="story" class="story-section">
+        <div class="section-header">
+            <h2>Interactive Story Experience</h2>
+            <p>Journey through Jinwoo's complete transformation with authentic artwork and meaningful choices</p>
+        </div>
+        
+        <div class="story-controls">
+            <div class="arc-selector">
+                <label for="arc-select">Story Arc:</label>
+                <select id="arc-select" class="form-control">
+                    <option value="d-rank">D-Rank Dungeon - The Beginning</option>
+                    <option value="system-awakening">System Awakening - Player Selected</option>
+                    <option value="training">Training Arc - Daily Quest Grind</option>
+                    <option value="job-change">Job Change Quest - Shadow Extraction</option>
+                    <option value="red-gate">Red Gate Arc - Ice Bear Survival</option>
+                    <option value="jeju-island">Jeju Island - Ant King Battle</option>
+                    <option value="shadow-monarch">Shadow Monarch - Final Form</option>
+                </select>
+            </div>
+            
+            <div class="story-nav-controls">
+                <button id="prev-scene" class="btn btn--secondary">← Previous</button>
+                <button id="auto-play" class="btn btn--primary">▶ Auto Play</button>
+                <button id="next-scene" class="btn btn--secondary">Next →</button>
+            </div>
+        </div>
+        
+        <div class="story-viewer">
+            <div class="story-panel">
+                <div class="story-image-display">
+                    <img id="current-story-image" src="https://pplx-res.cloudinary.com/image/upload/v1755449629/pplx_project_search_images/c8fcdcaa1f6c68c1e9053db84046fef8721fcb40.png" alt="Story Scene">
+                    <div class="story-effects"></div>
+                </div>
+                
+                <div class="story-text-panel">
+                    <div class="story-info">
+                        <h3 id="current-arc-title">D-Rank Dungeon Arc</h3>
+                        <div class="story-progress">
+                            <div class="progress-bar">
+                                <div id="story-progress-fill" class="progress-fill" style="width: 20%"></div>
+                            </div>
+                            <span id="story-progress-text">Scene 1 of 5</span>
+                        </div>
+                    </div>
+                    
+                    <div class="story-dialogue">
+                        <div id="story-text" class="dialogue-text">
+                            "I'm Sung Jinwoo, mockingly known as the 'weakest weapon of humanity.' Despite being an E-rank hunter—the lowest possible classification—I continue to risk my life in dangerous dungeons. The weight of my mother's medical bills and sister Jinah's education fees drives me forward..."
+                        </div>
+                        
+                        <div class="character-info">
+                            <div class="character-avatar">
+                                <img id="speaker-avatar" src="https://pplx-res.cloudinary.com/image/upload/v1755449629/pplx_project_search_images/c8fcdcaa1f6c68c1e9053db84046fef8721fcb40.png" alt="Jinwoo">
+                            </div>
+                            <div class="character-details">
+                                <span id="speaker-name" class="speaker-name">Sung Jinwoo</span>
+                                <span id="speaker-status" class="speaker-status">E-Rank Hunter</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="story-choices" id="story-choices">
+                <h4>Your Choice Shapes Jinwoo's Path</h4>
+                <div class="choices-grid">
+                    <button class="choice-btn" data-choice="cautious">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755449629/pplx_project_search_images/c8fcdcaa1f6c68c1e9053db84046fef8721fcb40.png" alt="Cautious approach">
+                        <span>Stay close to stronger hunters</span>
+                        <small>Prioritize safety but limit growth potential</small>
+                    </button>
+                    <button class="choice-btn" data-choice="brave">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755449629/pplx_project_search_images/c8fcdcaa1f6c68c1e9053db84046fef8721fcb40.png" alt="Brave approach">
+                        <span>Take initiative despite weakness</span>
+                        <small>Risky but shows determination to grow</small>
+                    </button>
+                    <button class="choice-btn" data-choice="strategic">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755449629/pplx_project_search_images/c8fcdcaa1f6c68c1e9053db84046fef8721fcb40.png" alt="Strategic approach">
+                        <span>Observe and support quietly</span>
+                        <small>Learn from experience while staying safe</small>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Character Database -->
+    <section id="characters" class="characters-section">
+        <div class="section-header">
+            <h2>Character Database</h2>
+            <p>Meet the legendary hunters, shadow soldiers, and key figures in Jinwoo's journey</p>
+        </div>
+        
+        <div class="character-filters">
+            <button class="filter-btn active" data-filter="all">All Characters</button>
+            <button class="filter-btn" data-filter="main">Main Cast</button>
+            <button class="filter-btn" data-filter="shadows">Shadow Army</button>
+            <button class="filter-btn" data-filter="hunters">S-Rank Hunters</button>
+            <button class="filter-btn" data-filter="monarchs">Monarchs</button>
+        </div>
+        
+        <div class="characters-grid">
+            <div class="character-card" data-category="main">
+                <div class="character-image-container">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1757587114/pplx_project_search_images/cfc423347724ed183b49099786c487d993b98f20.png" alt="Sung Jinwoo" class="character-image">
+                    <div class="character-overlay">
+                        <button class="character-detail-btn" data-character="jinwoo">View Profile</button>
+                    </div>
+                </div>
+                <div class="character-info">
+                    <h3>Sung Jinwoo</h3>
+                    <div class="character-rank">Shadow Monarch</div>
+                    <div class="character-progression">E-rank → God-tier Being</div>
+                    <div class="character-abilities">
+                        <span class="ability-tag">Shadow Extraction</span>
+                        <span class="ability-tag">Ruler's Authority</span>
+                        <span class="ability-tag">Shadow Exchange</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="character-card" data-category="main">
+                <div class="character-image-container">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1757587114/pplx_project_search_images/c71555b9dca2d5743e198858d730bc0550917f24.png" alt="Cha Hae-In" class="character-image">
+                    <div class="character-overlay">
+                        <button class="character-detail-btn" data-character="cha-haein">View Profile</button>
+                    </div>
+                </div>
+                <div class="character-info">
+                    <h3>Cha Hae-In</h3>
+                    <div class="character-rank">S-Rank Hunter</div>
+                    <div class="character-progression">Vice Guild Master → Love Interest</div>
+                    <div class="character-abilities">
+                        <span class="ability-tag">Sword Mastery</span>
+                        <span class="ability-tag">Enhanced Senses</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="character-card" data-category="shadows">
+                <div class="character-image-container">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1756016891/pplx_project_search_images/8e172044a30a13e8c1fd7ec4f4c2fb2b1908fb44.png" alt="Igris" class="character-image">
+                    <div class="character-overlay">
+                        <button class="character-detail-btn" data-character="igris">View Profile</button>
+                    </div>
+                </div>
+                <div class="character-info">
+                    <h3>Igris</h3>
+                    <div class="character-rank">Marshal Grade Shadow</div>
+                    <div class="character-progression">Blood-Red Commander → Shadow Marshal</div>
+                    <div class="character-abilities">
+                        <span class="ability-tag">Supreme Swordsmanship</span>
+                        <span class="ability-tag">Shadow Leadership</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="character-card" data-category="shadows">
+                <div class="character-image-container">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1756016891/pplx_project_search_images/8e172044a30a13e8c1fd7ec4f4c2fb2b1908fb44.png" alt="Beru" class="character-image">
+                    <div class="character-overlay">
+                        <button class="character-detail-btn" data-character="beru">View Profile</button>
+                    </div>
+                </div>
+                <div class="character-info">
+                    <h3>Beru</h3>
+                    <div class="character-rank">General Grade Shadow</div>
+                    <div class="character-progression">Ant King → Shadow General</div>
+                    <div class="character-abilities">
+                        <span class="ability-tag">Paralysis Poison</span>
+                        <span class="ability-tag">Flight</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Timeline -->
+    <section id="timeline" class="timeline-section">
+        <div class="section-header">
+            <h2>Power Evolution Timeline</h2>
+            <p>Track Jinwoo's complete transformation through every major battle and breakthrough</p>
+        </div>
+        
+        <div class="timeline-controls">
+            <div class="timeline-view-options">
+                <button class="view-btn active" data-view="linear">Linear Timeline</button>
+                <button class="view-btn" data-view="power">Power Levels</button>
+                <button class="view-btn" data-view="battles">Epic Battles</button>
+            </div>
+        </div>
+        
+        <div class="timeline-container">
+            <div class="timeline-track">
+                <div class="timeline-item" data-arc="d-rank">
+                    <div class="timeline-marker">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1757587114/pplx_project_search_images/18f9a2438689037ac988471e609be41cd5a23495.png" alt="Double Dungeon">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>The Double Dungeon Discovery</h3>
+                        <div class="timeline-chapters">Arc 1: Chapters 1-10</div>
+                        <p>Jinwoo's nightmare begins in what should have been a routine D-rank dungeon. The discovery of the hidden chamber with ancient guardians changes everything forever.</p>
+                        <div class="timeline-events">
+                            <span class="event-tag">Stone Guardian Encounter</span>
+                            <span class="event-tag">Player System Activation</span>
+                            <span class="event-tag">Near Death Experience</span>
+                        </div>
+                        <div class="timeline-stats">
+                            <span class="stat-badge">Level: 1</span>
+                            <span class="stat-badge">Rank: E</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-arc="job-change">
+                    <div class="timeline-marker">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1757587114/pplx_project_search_images/18f9a2438689037ac988471e609be41cd5a23495.png" alt="Job Change">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Job Change Quest - Shadow Extraction</h3>
+                        <div class="timeline-chapters">Arc 3: Chapters 38-45</div>
+                        <p>The legendary Job Change Quest where Jinwoo battles the Blood-Red Commander Igris and unlocks his true calling as the Shadow Monarch.</p>
+                        <div class="timeline-events">
+                            <span class="event-tag">Igris Boss Battle</span>
+                            <span class="event-tag">First Shadow Extraction</span>
+                            <span class="event-tag">Necromancer Class Unlock</span>
+                        </div>
+                        <div class="timeline-stats">
+                            <span class="stat-badge">Level: 51</span>
+                            <span class="stat-badge">Class: Shadow Necromancer</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-arc="shadow-monarch">
+                    <div class="timeline-marker">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1757587114/pplx_project_search_images/18f9a2438689037ac988471e609be41cd5a23495.png" alt="Shadow Monarch">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Shadow Monarch Awakening</h3>
+                        <div class="timeline-chapters">Final Arc: Chapters 200+</div>
+                        <p>The ultimate revelation of Jinwoo's true identity as the Shadow Monarch, inheritor of the Absolute Being's power over death itself.</p>
+                        <div class="timeline-events">
+                            <span class="event-tag">True Identity Revealed</span>
+                            <span class="event-tag">Infinite Shadow Army</span>
+                            <span class="event-tag">Cosmic Level Power</span>
+                        </div>
+                        <div class="timeline-stats">
+                            <span class="stat-badge">Level: ∞</span>
+                            <span class="stat-badge">Title: Shadow Monarch</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="gallery-section">
+        <div class="section-header">
+            <h2>Solo Leveling Gallery</h2>
+            <p>Explore iconic moments, epic battles, and stunning artwork from the manhwa</p>
+        </div>
+        
+        <div class="gallery-tabs">
+            <button class="gallery-tab-btn active" data-gallery="artwork">Iconic Scenes</button>
+            <button class="gallery-tab-btn" data-gallery="battles">Epic Battles</button>
+            <button class="gallery-tab-btn" data-gallery="shadows">Shadow Army</button>
+            <button class="gallery-tab-btn" data-gallery="transformation">Transformation</button>
+        </div>
+        
+        <div class="gallery-content">
+            <div id="artwork-gallery" class="gallery-tab-content active">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1757587114/pplx_project_search_images/cfc423347724ed183b49099786c487d993b98f20.png" alt="Jinwoo Evolution">
+                        <div class="gallery-overlay">
+                            <h4>The Complete Evolution</h4>
+                            <p>From weakest to strongest</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1757587114/pplx_project_search_images/c71555b9dca2d5743e198858d730bc0550917f24.png" alt="Hunters">
+                        <div class="gallery-overlay">
+                            <h4>S-Rank Hunters</h4>
+                            <p>Elite combat specialists</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1756016891/pplx_project_search_images/8e172044a30a13e8c1fd7ec4f4c2fb2b1908fb44.png" alt="Shadow Army">
+                        <div class="gallery-overlay">
+                            <h4>Shadow Army Formation</h4>
+                            <p>Eternal loyal soldiers</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1757587114/pplx_project_search_images/18f9a2438689037ac988471e609be41cd5a23495.png" alt="Power Levels">
+                        <div class="gallery-overlay">
+                            <h4>Power Transformation</h4>
+                            <p>Each major breakthrough</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="battles-gallery" class="gallery-tab-content">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1756016891/pplx_project_search_images/8e172044a30a13e8c1fd7ec4f4c2fb2b1908fb44.png" alt="Epic Battle">
+                        <div class="gallery-overlay">
+                            <h4>Shadow vs Monarchs</h4>
+                            <p>Ultimate power clash</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="shadows-gallery" class="gallery-tab-content">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1756016891/pplx_project_search_images/8e172044a30a13e8c1fd7ec4f4c2fb2b1908fb44.png" alt="Shadow Soldiers">
+                        <div class="gallery-overlay">
+                            <h4>Shadow Soldier Formation</h4>
+                            <p>Elite shadow commanders</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="transformation-gallery" class="gallery-tab-content">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1757587114/pplx_project_search_images/18f9a2438689037ac988471e609be41cd5a23495.png" alt="Transformation">
+                        <div class="gallery-overlay">
+                            <h4>Complete Transformation</h4>
+                            <p>Journey to Shadow Monarch</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Merchandise Shop -->
+    <section id="shop" class="shop-section">
+        <div class="section-header">
+            <h2>Solo Leveling Official Store</h2>
+            <p>Exclusive merchandise, collectibles, and authentic Solo Leveling items</p>
+        </div>
+        
+        <div class="shop-filters">
+            <div class="filter-group">
+                <label>Category:</label>
+                <select id="category-filter" class="form-control">
+                    <option value="all">All Categories</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="figures">Figures</option>
+                    <option value="accessories">Accessories</option>
+                    <option value="books">Books & Media</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label>Price Range:</label>
+                <select id="price-filter" class="form-control">
+                    <option value="all">All Prices</option>
+                    <option value="low">Under ₹2,000</option>
+                    <option value="mid">₹2,000 - ₹5,000</option>
+                    <option value="high">Above ₹5,000</option>
+                </select>
+            </div>
+            
+            <div class="search-group">
+                <input type="text" id="product-search" class="form-control" placeholder="Search products...">
+            </div>
+        </div>
+        
+        <div class="shop-grid">
+            <div class="product-card" data-category="clothing" data-price="2499">
+                <div class="product-image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1757587114/pplx_project_search_images/32cab866453a75a8ab337b042ce78c485728570d.png" alt="Shadow Monarch Hoodie">
+                    <div class="product-overlay">
+                        <button class="add-to-cart-btn" data-product="hoodie-shadow">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Shadow Monarch Hoodie</h3>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-text">(127)</span>
+                    </div>
+                    <div class="product-price">₹2,499</div>
+                    <p class="product-description">Premium quality hoodie featuring Igris design with glow-in-the-dark elements</p>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="clothing" data-price="1299">
+                <div class="product-image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1757587114/pplx_project_search_images/bb073260b75dd63c8f7381b3c5edf20bff617386.png" alt="Solo Leveling T-Shirt">
+                    <div class="product-overlay">
+                        <button class="add-to-cart-btn" data-product="tshirt-logo">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Solo Leveling Logo T-Shirt</h3>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-text">(89)</span>
+                    </div>
+                    <div class="product-price">₹1,299</div>
+                    <p class="product-description">Official Solo Leveling logo tee in premium cotton blend</p>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="figures" data-price="4999">
+                <div class="product-image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1757587114/pplx_project_search_images/cfc423347724ed183b49099786c487d993b98f20.png" alt="Jinwoo Figure">
+                    <div class="product-overlay">
+                        <button class="add-to-cart-btn" data-product="figure-jinwoo">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Sung Jinwoo Premium Figure</h3>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-text">(45)</span>
+                    </div>
+                    <div class="product-price">₹4,999</div>
+                    <p class="product-description">High-quality PVC figure with Shadow Monarch transformation effects</p>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="figures" data-price="3499">
+                <div class="product-image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1756016891/pplx_project_search_images/8e172044a30a13e8c1fd7ec4f4c2fb2b1908fb44.png" alt="Igris Figure">
+                    <div class="product-overlay">
+                        <button class="add-to-cart-btn" data-product="figure-igris">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Igris Knight Figure</h3>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-text">(32)</span>
+                    </div>
+                    <div class="product-price">₹3,499</div>
+                    <p class="product-description">Blood-Red Commander with authentic sword and armor details</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Forum -->
+    <section id="community" class="community-section">
+        <div class="section-header">
+            <h2>Shadow Army Community</h2>
+            <p>Join fellow hunters in discussions, theories, and fan creations</p>
+        </div>
+        
+        <div class="community-stats">
+            <div class="stat-card">
+                <div class="stat-number">15,847</div>
+                <div class="stat-label">Active Members</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">2,394</div>
+                <div class="stat-label">Discussions</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">8,672</div>
+                <div class="stat-label">Fan Arts</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">1,205</div>
+                <div class="stat-label">Theory Posts</div>
+            </div>
+        </div>
+        
+        <div class="forum-categories">
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon">💬</div>
+                    <h3>General Discussion</h3>
+                    <p>Share your thoughts about Solo Leveling</p>
+                    <div class="category-stats">
+                        <span>1,847 posts</span>
+                        <span>Last: 2 min ago</span>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">🧠</div>
+                    <h3>Theories & Analysis</h3>
+                    <p>Deep dives into plot and character development</p>
+                    <div class="category-stats">
+                        <span>1,205 posts</span>
+                        <span>Last: 15 min ago</span>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">🎨</div>
+                    <h3>Fan Art Gallery</h3>
+                    <p>Showcase your Solo Leveling artwork</p>
+                    <div class="category-stats">
+                        <span>8,672 posts</span>
+                        <span>Last: 5 min ago</span>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">📱</div>
+                    <h3>Game Discussion</h3>
+                    <p>Solo Leveling: Arise and other games</p>
+                    <div class="category-stats">
+                        <span>3,421 posts</span>
+                        <span>Last: 32 min ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="recent-posts">
+            <h3>Recent Discussions</h3>
+            <div class="post-list">
+                <div class="post-item">
+                    <div class="post-avatar">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1757587114/pplx_project_search_images/c71555b9dca2d5743e198858d730bc0550917f24.png" alt="User avatar">
+                    </div>
+                    <div class="post-content">
+                        <h4>Shadow Monarch vs Monarchs Power Analysis</h4>
+                        <p>Deep analysis of Jinwoo's final battle capabilities...</p>
+                        <div class="post-meta">
+                            <span>By ShadowHunter_95</span>
+                            <span>•</span>
+                            <span>2 minutes ago</span>
+                            <span>•</span>
+                            <span>47 replies</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post-item">
+                    <div class="post-avatar">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1756016891/pplx_project_search_images/8e172044a30a13e8c1fd7ec4f4c2fb2b1908fb44.png" alt="User avatar">
+                    </div>
+                    <div class="post-content">
+                        <h4>My Igris Fan Art - Digital Painting</h4>
+                        <p>Spent 20 hours on this Igris artwork, what do you think?</p>
+                        <div class="post-meta">
+                            <span>By ArtistMonarch</span>
+                            <span>•</span>
+                            <span>15 minutes ago</span>
+                            <span>•</span>
+                            <span>23 replies</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post-item">
+                    <div class="post-avatar">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1757587114/pplx_project_search_images/18f9a2438689037ac988471e609be41cd5a23495.png" alt="User avatar">
+                    </div>
+                    <div class="post-content">
+                        <h4>Theory: Hidden Meaning Behind System Messages</h4>
+                        <p>I've been analyzing the system's wording and found patterns...</p>
+                        <div class="post-meta">
+                            <span>By TheoryMaster</span>
+                            <span>•</span>
+                            <span>32 minutes ago</span>
+                            <span>•</span>
+                            <span>89 replies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Login -->
+    <section id="login" class="auth-section">
+        <div class="auth-container">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <h2>Hunter Login</h2>
+                    <p>Welcome back to the Shadow Army</p>
+                </div>
+                
+                <form class="auth-form" id="login-form">
+                    <div class="form-group">
+                        <label class="form-label">Email or Username</label>
+                        <input type="text" class="form-control" id="login-email" placeholder="Enter your hunter credentials">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" id="login-password" placeholder="Enter your password">
+                    </div>
+                    
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="remember-me">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-link">Forgot password?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn btn--primary btn--full-width">Login to Shadow Army</button>
+                </form>
+                
+                <div class="auth-divider">
+                    <span>Or continue with</span>
+                </div>
+                
+                <div class="social-login">
+                    <button class="btn btn--outline social-btn">
+                        <span>📧</span>
+                        Continue with Google
+                    </button>
+                    <button class="btn btn--outline social-btn">
+                        <span>👤</span>
+                        Continue with Discord
+                    </button>
+                </div>
+                
+                <div class="auth-footer">
+                    <p>New hunter? <a href="#register" data-section="register">Create your account</a></p>
+                </div>
+                
+                <div class="login-benefits">
+                    <h4>Hunter Benefits</h4>
+                    <ul>
+                        <li>📊 Track your story progress</li>
+                        <li>👥 Join the Shadow Army community</li>
+                        <li>🎯 Unlock exclusive content</li>
+                        <li>🛍️ Access to member-only merchandise</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Registration -->
+    <section id="register" class="auth-section">
+        <div class="auth-container">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <h2>Become a Hunter</h2>
+                    <p>Join the Shadow Army and start your journey</p>
+                </div>
+                
+                <form class="auth-form" id="register-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="first-name" placeholder="Enter first name">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="last-name" placeholder="Enter last name">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="register-email" placeholder="Enter your email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Choose a unique username">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" id="register-password" placeholder="Create a strong password">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Hunter Preference</label>
+                        <select class="form-control" id="hunter-class">
+                            <option value="">Select your preferred hunter type</option>
+                            <option value="fighter">Fighter - Close combat specialist</option>
+                            <option value="mage">Mage - Magical damage dealer</option>
+                            <option value="assassin">Assassin - Speed and stealth</option>
+                            <option value="healer">Healer - Support specialist</option>
+                            <option value="tank">Tank - Defense and protection</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="agree-terms" required>
+                            <span>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="newsletter">
+                            <span>Subscribe to Shadow Army newsletter for exclusive updates</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn--primary btn--full-width">Create Hunter Account</button>
+                </form>
+                
+                <div class="auth-footer">
+                    <p>Already a hunter? <a href="#login" data-section="login">Sign in here</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Dashboard -->
+    <section id="dashboard" class="dashboard-section hidden">
+        <div class="dashboard-header">
+            <div class="user-info">
+                <div class="user-avatar">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1757587114/pplx_project_search_images/c71555b9dca2d5743e198858d730bc0550917f24.png" alt="User avatar">
+                </div>
+                <div class="user-details">
+                    <h2 id="user-name">ShadowHunter_95</h2>
+                    <div class="user-rank">C-Rank Hunter</div>
+                    <div class="user-level">Level 34</div>
+                </div>
+            </div>
+            
+            <div class="dashboard-nav">
+                <button class="tab-btn active" data-tab="overview">Overview</button>
+                <button class="tab-btn" data-tab="progress">Story Progress</button>
+                <button class="tab-btn" data-tab="achievements">Achievements</button>
+                <button class="tab-btn" data-tab="settings">Settings</button>
+            </div>
+        </div>
+        
+        <div class="dashboard-content">
+            <div id="overview-tab" class="dashboard-tab active">
+                <div class="dashboard-grid">
+                    <div class="dashboard-card">
+                        <h3>Story Progress</h3>
+                        <div class="progress-display">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 65%"></div>
+                            </div>
+                            <span>65% Complete</span>
+                        </div>
+                        <p>Currently on: Red Gate Arc</p>
+                    </div>
+                    
+                    <div class="dashboard-card">
+                        <h3>Shadow Army</h3>
+                        <div class="shadow-count">
+                            <span class="big-number">12</span>
+                            <span>Shadow Soldiers</span>
+                        </div>
+                        <p>Latest: Iron (Elite Grade)</p>
+                    </div>
+                    
+                    <div class="dashboard-card">
+                        <h3>Community Standing</h3>
+                        <div class="community-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">47</span>
+                                <span class="stat-name">Posts</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">234</span>
+                                <span class="stat-name">Likes</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-card">
+                        <h3>Recent Activity</h3>
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <span class="activity-icon">📖</span>
+                                <span>Completed Job Change Arc</span>
+                            </div>
+                            <div class="activity-item">
+                                <span class="activity-icon">👥</span>
+                                <span>Extracted Shadow: Igris</span>
+                            </div>
+                            <div class="activity-item">
+                                <span class="activity-icon">🛍️</span>
+                                <span>Purchased Shadow Monarch Hoodie</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Dashboard -->
+    <section id="admin" class="admin-section hidden">
+        <div class="admin-header">
+            <h2>Admin Panel</h2>
+            <p>Content & User Management</p>
+        </div>
+        
+        <div class="admin-nav">
+            <button class="admin-tab-btn active" data-tab="content">Content</button>
+            <button class="admin-tab-btn" data-tab="users">Users</button>
+            <button class="admin-tab-btn" data-tab="analytics">Analytics</button>
+            <button class="admin-tab-btn" data-tab="products">Products</button>
+        </div>
+        
+        <div class="admin-content">
+            <div id="content-admin" class="admin-tab-content active">
+                <div class="admin-actions">
+                    <button class="btn btn--primary">Add Story Arc</button>
+                    <button class="btn btn--primary">Add Character</button>
+                    <button class="btn btn--secondary">Manage Gallery</button>
+                </div>
+                
+                <div class="content-list">
+                    <div class="content-item">
+                        <div class="content-info">
+                            <h4>D-Rank Dungeon Arc</h4>
+                            <p>5 scenes • Published</p>
+                        </div>
+                        <div class="content-actions">
+                            <button class="btn btn--sm">Edit</button>
+                            <button class="btn btn--sm">Delete</button>
+                        </div>
+                    </div>
+                    
+                    <div class="content-item">
+                        <div class="content-info">
+                            <h4>Job Change Quest Arc</h4>
+                            <p>7 scenes • Published</p>
+                        </div>
+                        <div class="content-actions">
+                            <button class="btn btn--sm">Edit</button>
+                            <button class="btn btn--sm">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Character Detail Modal -->
+    <div id="character-modal" class="modal hidden">
+        <div class="modal-content character-modal">
+            <div class="character-detail-header">
+                <div class="character-portrait">
+                    <img id="modal-character-image" src="" alt="">
+                </div>
+                <div class="character-detail-info">
+                    <h2 id="modal-character-name"></h2>
+                    <div id="modal-character-rank" class="character-rank"></div>
+                    <div id="modal-character-class" class="character-class"></div>
+                </div>
+            </div>
+            
+            <div class="character-detail-tabs">
+                <button class="tab-btn active" data-tab="stats">Stats</button>
+                <button class="tab-btn" data-tab="abilities">Abilities</button>
+                <button class="tab-btn" data-tab="story">Story Arc</button>
+            </div>
+            
+            <div class="character-detail-content">
+                <div id="stats-tab" class="tab-content active">
+                    <div class="character-stats-chart" style="position: relative; height: 300px;">
+                        <canvas id="character-stats-canvas"></canvas>
+                    </div>
+                </div>
+                
+                <div id="abilities-tab" class="tab-content">
+                    <div id="character-abilities-list"></div>
+                </div>
+                
+                <div id="story-tab" class="tab-content">
+                    <div id="character-story-arc"></div>
+                </div>
+            </div>
+            
+            <button class="modal-close" onclick="closeModal('character-modal')">×</button>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3>Shopping Cart</h3>
+            <div id="cart-items"></div>
+            <div class="cart-summary">
+                <div class="cart-total">
+                    <span>Total: ₹<span id="cart-total">0</span></span>
+                </div>
+                <div class="cart-actions">
+                    <button class="btn btn--outline" onclick="closeModal('cart-modal')">Continue Shopping</button>
+                    <button class="btn btn--primary" id="checkout-btn">Proceed to Checkout</button>
+                </div>
+            </div>
+            <button class="modal-close" onclick="closeModal('cart-modal')">×</button>
+        </div>
+    </div>
+
+    <!-- Progress Tracker -->
+    <div class="progress-tracker">
+        <div class="progress-info">
+            <span>Journey Progress</span>
+            <span id="overall-progress">0%</span>
+        </div>
+        <div class="progress-bar">
+            <div id="overall-progress-fill" class="progress-fill"></div>
+        </div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-overlay">
+        <div class="loading-content">
+            <div class="loading-animation">
+                <div class="shadow-orb"></div>
+                <div class="shadow-orb"></div>
+                <div class="shadow-orb"></div>
+            </div>
+            <h2>Loading Solo Leveling...</h2>
+            <p>Preparing your transformation from weakest to Shadow Monarch</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
